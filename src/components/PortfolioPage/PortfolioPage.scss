@@ -1,0 +1,101 @@
+.portfolio{
+    width: 100%;
+    //height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-around;
+    height: fit-content;
+    &__header{
+        width: 100%;
+        height: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__item{
+        flex-basis: 30%;
+        min-height: fit-content;
+        height: auto;
+        text-align: center;
+        line-height: 20px;
+        border: 1px dotted lightslategray;
+        border-radius: 3px;
+        margin: 10px;
+        padding: 10px;
+        flex-grow: 0;
+        align-self: stretch;
+       //display: flex;
+        &--date{
+            font-size: 10px;
+            line-height: 18px;
+        }
+        &--name{
+            font-weight: bold;
+        }
+        &--link>a{
+            text-decoration: none;
+        }
+        &--comment{
+            font-style: italic;
+        }
+    }
+    &__img{
+        width: 100px;
+        margin: 10px auto;
+        &--size{
+            width: 100%;
+            height: 100%;   
+        }
+    }
+    &__large{
+        width:100%;
+        margin-top: 10px;
+    }
+    &__close{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+        background-color: darkgray;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-bottom: 5px;
+    }
+    &__description{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 28px;
+        & > ul{
+            list-style: none;
+        }
+        & > ul > li{
+            padding-left: 20px;
+            position: relative;
+            margin: 10px;
+        }
+        & > ul > li:before{
+            content: '✔';
+            position: absolute; top: 0; left: 0;
+            color: limegreen;
+        }
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .portfolio{
+        &__item{
+            flex-basis: 45%;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .portfolio{
+        &__item{
+            flex-basis: 90%;
+        }
+    }
+}

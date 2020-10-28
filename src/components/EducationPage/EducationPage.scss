@@ -1,0 +1,21 @@
+.Education{
+    overflow-y: auto;
+}
+.EducationItem{
+    margin-top: 20px;
+    &__title{
+        font-weight: bold;
+    }
+    &__item{
+        margin-top: 10px;
+        
+    }
+    &--itemborder{
+        border: 1px solid lightgray;
+        padding: 0 10px 10px 10px;
+        margin-top: 10px;
+    }
+    &--smallFont{
+        font-size: 10px;
+    }
+}

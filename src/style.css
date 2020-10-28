@@ -1,0 +1,119 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #3d3632;
+  background-image: url("./img/cvetovaya-palitra-3099.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+.main {
+  padding: 0 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.goTop {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #3d3632;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #fcd2a8;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.infoPage {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10px;
+  background-color: #cdd2d9;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid #3d3632;
+  position: relative;
+}
+
+.infoPage--wide {
+  left: calc(10% + 10px);
+  width: calc(90% - 20px);
+}
+
+.infoPage__header {
+  width: 100%;
+  height: 24px;
+  text-align: center;
+  border-bottom: 1px dotted #a2b0c0;
+  line-height: 20px;
+  color: #3d3632;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fcd2a8;
+}
+
+.scroll-y {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    min-height: inherit;
+    margin: 10px 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .infoPage__header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+/*# sourceMappingURL=style.css.map */

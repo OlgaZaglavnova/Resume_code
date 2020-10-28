@@ -1,0 +1,9 @@
+.Qualifications {
+  overflow-y: auto;
+  height: calc(100% - 20px);
+}
+
+.Qualifications--smallFont {
+  font-size: 10px;
+}
+/*# sourceMappingURL=QualificationPage.css.map */

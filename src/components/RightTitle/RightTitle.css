@@ -1,0 +1,126 @@
+.rightTitle {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #a2b0c0;
+  color: #3d3632;
+  padding: 20px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #3d3632;
+  border-bottom: none;
+}
+
+.rightTitle--smallFont {
+  font-size: 10px;
+  color: #3d3632;
+}
+
+.rightTitle--middleFont {
+  font-size: 11px;
+  color: #cdd2d9;
+}
+
+.rightTitle--bigFont {
+  font-size: 12px;
+  color: #cdd2d9;
+}
+
+.rightTitle--tableLeft {
+  width: 30%;
+}
+
+.rightTitle__personal {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding: 0px 20px;
+}
+
+.rightTitle__photo {
+  height: 200px;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  background-image: url("../../img/myPhoto1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-shadow: 0px 0px 5px 5px #a2b0c0 inset;
+          box-shadow: 0px 0px 5px 5px #a2b0c0 inset;
+}
+
+.rightTitle__photo--img {
+  width: auto;
+  height: 100%;
+}
+
+.rightTitle__name {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fcd2a8;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.rightTitle__age {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+}
+
+.rightTitle__age--title {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.rightTitle__info {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .rightTitle {
+    line-height: 12px;
+  }
+  .rightTitle--smallFont {
+    font-size: 8px;
+  }
+  .rightTitle--middleFont {
+    font-size: 9px;
+  }
+  .rightTitle--bigFont {
+    font-size: 10px;
+  }
+  .rightTitle__personal {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .rightTitle__photo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-position: center;
+  }
+  .rightTitle__personal {
+    margin-top: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .rightTitle__info {
+    margin-top: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 10%;
+  }
+}
+/*# sourceMappingURL=RightTitle.css.map */

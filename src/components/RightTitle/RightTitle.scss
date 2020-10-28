@@ -1,0 +1,108 @@
+.rightTitle{
+    flex-basis: 100%;
+    height: fit-content;
+    background-color: #a2b0c0;
+    //border-radius: 3px;
+    color:#3d3632;
+    padding: 20px;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    border: 1px solid #3d3632;
+    border-bottom: none;
+    &--smallFont{
+        font-size: 10px;
+        color:#3d3632;
+    }
+    &--middleFont{
+        font-size: 11px;
+        color: #cdd2d9;
+    }
+    &--bigFont{
+        font-size: 12px;
+        color: #cdd2d9;
+    }
+    &--tableLeft{
+        width: 30%;
+    }
+    &__personal{
+        flex-grow: 1;
+        flex-basis: 80%;
+        padding: 0px 20px;
+    }
+    &__photo{
+        height: 200px;
+        flex-basis: 20%;
+        text-align: center;
+        background-image: url("../../img/myPhoto1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        box-shadow: 0px 0px 5px 5px #a2b0c0 inset;
+        // &:hover{
+        //     transform: scale(1.45);
+        // }
+    }
+
+    &__photo--img{
+        width: auto;
+        height: 100%;
+        //border-radius: 10px;
+        
+        //box-shadow: 0px 0px 10px 10px #274b69 inset;
+    }
+    &__name{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #fcd2a8;
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+    &__age{
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 16px;
+        &--title{
+            font-size: 10px;
+            font-weight: normal;
+        }
+    }
+    &__info{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 600px){
+    .rightTitle{
+        line-height: 12px;
+        &--smallFont{
+            font-size: 8px;
+        }
+        &--middleFont{
+            font-size: 9px;
+        }  
+        &--bigFont{
+            font-size: 10px;
+        }
+        &__personal{
+            flex-basis: 100%;
+        }
+        &__photo{
+            flex-basis: 100%;
+            background-position: center;
+        }
+        &__personal{
+            margin-top: 20px;
+            flex-basis: 100%;
+        }
+        &__info{
+            margin-top: 20px;
+            flex-basis: 100%;
+            padding-left: 10%;
+        }
+    }
+}

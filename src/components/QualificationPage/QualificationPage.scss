@@ -1,0 +1,7 @@
+.Qualifications{
+    overflow-y: auto;
+    height: calc(100% - 20px);
+    &--smallFont{
+        font-size: 10px;
+    }
+}

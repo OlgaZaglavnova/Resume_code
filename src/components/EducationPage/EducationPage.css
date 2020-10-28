@@ -1,0 +1,26 @@
+.Education {
+  overflow-y: auto;
+}
+
+.EducationItem {
+  margin-top: 20px;
+}
+
+.EducationItem__title {
+  font-weight: bold;
+}
+
+.EducationItem__item {
+  margin-top: 10px;
+}
+
+.EducationItem--itemborder {
+  border: 1px solid lightgray;
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+}
+
+.EducationItem--smallFont {
+  font-size: 10px;
+}
+/*# sourceMappingURL=EducationPage.css.map */

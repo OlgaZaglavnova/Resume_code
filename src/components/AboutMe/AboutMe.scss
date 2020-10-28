@@ -1,0 +1,23 @@
+.AboutMe{
+    font-size: 12px;
+    font-weight: bold;
+    overflow-y: auto;
+    &--title{
+        color: navy;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    &--label{
+        font-size: 10px;
+        color: gray;
+        width: 25%;
+        min-height: fit-content;
+        height: 40px;
+    }
+    &__item{
+        margin-top: 10px;
+    }
+    &--language{
+        margin-left: 50px;
+    }
+}

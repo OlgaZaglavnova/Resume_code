@@ -1,0 +1,100 @@
+//@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic);
+//https://color.romanuke.com/tsvetovaya-palitra-3099/
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Philosopher', sans-serif;
+        //transition: 1s;
+    }
+
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #3d3632;
+        background-image: url('./img/cvetovaya-palitra-3099.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        //display: flex;
+    }
+    .main{
+        // flex-basis: 100%;
+        padding: 0 2%;
+        flex-wrap: wrap;
+        height: 100%;
+        min-height: 100vh;
+        width: 100%;
+        // position: absolute;
+        display: flex;
+        //left: 25%;
+        flex-direction: column;
+    }
+    .goTop{
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: #3d3632;
+        border-radius: 50%;
+        right: 20px;
+        bottom: 20px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: #fcd2a8;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .infoPage{
+    // height: calc(100% - 15% - 10px);
+        height: fit-content;
+        margin-top: 10px;
+        background-color: #cdd2d9;
+        border-radius: 3px;
+        //padding: 20px;
+        font-size: 12px;
+        transition: 0.5s;
+        flex-basis: 100%;
+        flex-grow: 1;
+        border: 1px solid #3d3632 ;
+        position: relative;
+        &--wide{
+            left: calc(10% + 10px);
+            width: calc(90% - 20px);
+        }
+        &__header{
+            width: 100%;
+            height: 24px;
+            text-align: center;
+            border-bottom: 1px dotted #a2b0c0;
+            line-height: 20px;
+            color: #3d3632;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #fcd2a8;
+        }
+    }
+    .scroll-y{
+        height: fit-content;
+        padding: 20px;
+    }
+    .hidden{
+        display: none;
+    }
+    @media screen and (max-width: 600px){
+        .container{
+            flex-wrap: wrap;
+        }
+        .main{
+            flex-basis: 100%;
+            min-height: inherit;
+            margin: 10px 0px;
+            height: fit-content;
+        }
+        .infoPage{
+            &__header{
+                height: fit-content;
+            }
+        }
+    }

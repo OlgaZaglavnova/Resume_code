@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,iBAAiB;CAI5B;;AAHI,AAAD,0BAAY,CAAA;EACR,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "QualificationPage.scss"
+    ],
+    "names": [],
+    "file": "QualificationPage.css"
+}
